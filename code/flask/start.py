@@ -4,9 +4,9 @@ from includes.blueprint import *
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.urandom(64)
-app.config['SESSION_TYPE'] = 'filesystem'
-app.config['SESSION_FILE_DIR'] = './.flask_session/'
+app.config["SECRET_KEY"] = os.urandom(64)
+app.config["SESSION_TYPE"] = "filesystem"
+app.config["SESSION_FILE_DIR"] = "./.flask_session/"
 Session(app)
 app.register_blueprint(landing_page)
 app.register_blueprint(login_page)
@@ -29,4 +29,5 @@ app.register_blueprint(spotify_remove)
 app.register_blueprint(profile_page_password)
 app.register_blueprint(profile_page_delete_acc)
 
-app.run(host='127.0.0.1', port=81)
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8081)

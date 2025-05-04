@@ -1,6 +1,6 @@
 code/PoC/YouTubeMusicAPI/headers_auth.json
 __pycache__
 *.pyc
+.github
 .mypy_cache
 .venv
-.flask_session
