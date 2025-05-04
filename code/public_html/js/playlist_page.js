@@ -140,7 +140,7 @@ function displaySpotifyPlaylists() {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: 'https://playsync.me/spotify',
+            url: './spotify',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -175,7 +175,7 @@ function displaySpotifySongs(playlistID) {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: `https://playsync.me/spotify`,
+            url: `./spotify`,
             type: 'POST',
             dataType: 'json',
             data: {
@@ -207,7 +207,7 @@ function searchSpotifySongs(songTitle, songArtist, songCount) {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: 'https://playsync.me/spotify',
+            url: './spotify',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -253,7 +253,7 @@ function displayYouTubePlaylists() {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: 'https://playsync.me/youtube',
+            url: './youtube',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -288,7 +288,7 @@ function displayYouTubeSongs(playlistID) {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: `https://playsync.me/youtube`,
+            url: `./youtube`,
             type: 'POST',
             dataType: 'json',
             data: {
@@ -326,7 +326,7 @@ function searchYouTubeSongs(songTitle, songArtist, songDesc, songCount) {
     if (userC != '') {
         var html = '';
         $.ajax({
-            url: 'https://playsync.me/youtube',
+            url: './youtube',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -398,7 +398,7 @@ function confirm() {
 
                     if (platformTwo == "Spotify") {
                         $.ajax({
-                            url: `https://playsync.me/spotify`,
+                            url: `./spotify`,
                             type: 'POST',
                             dataType: 'json',
                             data: {
@@ -420,7 +420,7 @@ function confirm() {
 
                     else if (platformTwo == "YoutubeMusic") {
                         $.ajax({
-                            url: `https://playsync.me/youtube`,
+                            url: `./youtube`,
                             type: 'POST',
                             dataType: 'json',
                             data: {
